@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #032447; /* Dark background for BigPanda-like theme */
+  font-family: 'Arial', sans-serif; /* Or any other font you prefer */
+}
+
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2146b5; /* Light background for chatbot container */
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+  padding: 20px;
+  padding-top: 10px;
+  max-width: 80%; /* Maximum width of the chatbot container */
+  margin: auto;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* subtle gradient */
+}
+
+.chatbot-input ,
+.chatbot-file-input {
+  width: 80%; /* Adjust width */
+  height: 45px;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* subtle inset shadow */
+}
+
+/* Styling for the file input field */
+.chatbot-file-input::-webkit-file-upload-button {
+  background-color: #4caf50;
+  color: white;
+  padding-bottom: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.chatbot-file-input::-webkit-file-upload-button:hover {
+  background-color: #45a049;
+}
+
+
+.chatbot-button {
+  width: 80%; /* Adjust width */
+  height: 50px;
+  padding-bottom: 50px;
+  background-color: #2146b5;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+}
+
+.chatbot-button:hover {
+  background-color: #2146b5;
+}
+
+.chatbot-button:active {
+  transform: translateY(2px); /* Button moves in slightly when clicked */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adjust shadow to give clicked effect */
+}
+
+.conversation-container {
+  width: 80%;
+  max-height: 500px; /* or any value that fits your design */
+  overflow-y: auto; /* to make it scrollable */
+  margin-top: 20px;
+}
+
+.conversation {
+  background-color: #e5e5e5; /* or any other color you prefer */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.user-message {
+  font-weight: bold;
+  padding: 50px;
+  color: #333; /* or any other color you prefer */
+}
+
+.chatbot-response {
+  background-color: #f1f1f1; /* lighter shade for the response */
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
